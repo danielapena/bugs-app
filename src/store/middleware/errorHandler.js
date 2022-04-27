@@ -3,7 +3,7 @@ const errorHandler = (store) => (next) => (action) => {
   if (type === "error") {
     console.log(`Toastify: ${payload.message}`); // TODO: Add toasty message
   } else {
-    next(action);
+    return next(action);
   }
 };
 

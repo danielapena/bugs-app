@@ -25,9 +25,9 @@ const api =
 
       if (onSuccess) dispatch({ type: onSuccess, payload: response.data });
     } catch (error) {
-      dispatch({ type: actions.apiCallFailed.type, payload: error });
+      dispatch(actions.apiCallFailed(error.message));
 
-      if (onError) dispatch({ type: onError, payload: error });
+      if (onError) dispatch({ type: onError, payload: error.message });
     }
   };
 
