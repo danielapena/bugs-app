@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+// TODO: Get from server
 let lastId = 0;
 
 const slice = createSlice({
