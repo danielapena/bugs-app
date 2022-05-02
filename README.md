@@ -1,4 +1,4 @@
-# Basic Bugs Project with Redux
+# Bugs Project with Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
